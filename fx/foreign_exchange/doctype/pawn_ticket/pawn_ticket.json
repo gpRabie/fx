@@ -19,7 +19,8 @@
   "desired_principal",
   "interest",
   "net_proceeds",
-  "amended_from"
+  "amended_from",
+  "test_2"
  ],
  "fields": [
   {
@@ -112,12 +113,17 @@
    "fieldtype": "Select",
    "label": "Pawn Type",
    "options": "Gadget\nJewelry"
+  },
+  {
+   "fieldname": "test_2",
+   "fieldtype": "Data",
+   "label": "Test 2"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-23 09:50:08.463640",
+ "modified": "2021-09-23 10:42:43.383711",
  "modified_by": "Administrator",
  "module": "Foreign Exchange",
  "name": "Pawn Ticket",
