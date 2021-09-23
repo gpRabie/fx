@@ -19,8 +19,7 @@
   "desired_principal",
   "interest",
   "net_proceeds",
-  "amended_from",
-  "test_2"
+  "amended_from"
  ],
  "fields": [
   {
@@ -76,18 +75,10 @@
    "reqd": 1
   },
   {
-   "fetch_from": "naming_series",
-   "fieldname": "customer_tracker_no",
-   "fieldtype": "Link",
-   "label": "Customer",
-   "options": "Customer",
-   "reqd": 1
-  },
-  {
    "fetch_from": "customer_tracker_no.customer_name",
    "fieldname": "customers_full_name",
    "fieldtype": "Data",
-   "label": "Customers Full Name"
+   "label": "Customer Full Name"
   },
   {
    "fieldname": "amended_from",
@@ -115,15 +106,18 @@
    "options": "Gadget\nJewelry"
   },
   {
-   "fieldname": "test_2",
-   "fieldtype": "Data",
-   "label": "Test 2"
+   "fetch_from": "customer.naming_series",
+   "fieldname": "customer_tracker_no",
+   "fieldtype": "Link",
+   "label": "Customer Tracker No",
+   "options": "Customer",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-09-23 10:42:43.383711",
+ "modified": "2021-09-23 14:21:01.152579",
  "modified_by": "Administrator",
  "module": "Foreign Exchange",
  "name": "Pawn Ticket",
