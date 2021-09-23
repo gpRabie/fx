@@ -97,6 +97,13 @@ app_license = "MIT"
 #	}
 # }
 
+doc_events = {
+ 	"FX Customer": {
+ 		"validate": "fx.foreign_exchange.doc_events.fx_customer.validate",
+ 		
+	}
+}
+
 # Scheduled Tasks
 # ---------------
 

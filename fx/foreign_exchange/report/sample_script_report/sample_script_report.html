@@ -1,0 +1,76 @@
+<h1>Sample Script Report</h1>
+<h2>Filters</h2>
+<h3>
+   ID Type: {%=filters.id_type %}
+</h3>
+{% let currency = erpnext.get_currency(frappe.defaults.get_default("company")) %}
+
+<table style="border: 1px solid red;">
+    <thead>
+        <tr>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>Customer Tracker No.</h2>
+            </td>
+
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>First Name</h2>
+            </td>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>Last Name</h2>
+            </td>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>Gender</h2>
+            </td>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>Birth Date</h2>
+            </td>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>ID Type</h2>
+            </td>
+            <td style="border: 5px solid red; font-weight: bold;">
+                <h2>Money Borrowed</h2>
+            </td>
+        </tr>
+        
+    </thead>
+    <tbody>
+        {% for(var i=0, l=data.length; i<l; i++){ %}
+        <tr>
+            
+            <td style="border: 1px solid blue;">
+                {%= data[i].customer_tracker %}
+            </td>
+            <td style="border: 1px solid blue;">
+                {%= data[i].first_name %}
+            </td>
+            <td style="border: 1px solid blue;">
+                {%= data[i].last_name %}
+            </td>
+            <td style="border: 1px solid blue;">
+                {%= data[i].gender %}
+            </td>
+            <td style="border: 1px solid blue;">
+                {%= data[i].date_of_birth %}
+            </td>
+            {% if (data[i].id_type == "SSS ID"){ %}
+                <td style="border: 1px solid gold;">
+                    <span style="color: green;">{%= data[i].id_type %}</span>
+                </td>
+            {% } else { %}
+                <td style="border: 1px solid blue;">
+                    {%= data[i].id_type %}
+                </td>
+            {% } %}
+            {% if (data[i].is_total_row == 1){ %}
+                <td style="border: 1px solid blue;">
+                    <span style="color: red;">{%= data[i].money_borrowed %}</span>
+                </td>
+            {% } else { %}
+                <td style="border: 1px solid blue;">
+                    {%= format_currency(data[i].money_borrowed, currency) %}
+                </td>
+            {% } %}
+        </tr>
+    {% } %}
+    </tbody>
+</table>

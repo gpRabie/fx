@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:customer_tracker",
+ "creation": "2021-09-13 17:04:00.553961",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_tracker",
+  "first_name",
+  "last_name",
+  "column_break_4",
+  "gender",
+  "date_of_birth",
+  "place_of_birth",
+  "section_break_8",
+  "contact_no",
+  "permanent_address",
+  "present_address",
+  "column_break_12",
+  "corporate_account_name",
+  "nature_of_business",
+  "section_break_16",
+  "id_type",
+  "id_expiry",
+  "id_docs_pic_name",
+  "risk_level",
+  "money_borrowed"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "customer_tracker",
+   "fieldtype": "Data",
+   "label": "Customer tracker",
+   "length": 200,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gender & Nationality"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Birthday"
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place of Birth",
+   "length": 200
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Cellphone#/ Landline#"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Data",
+   "label": "Permanent Address/ Office Address (For Corp account)",
+   "length": 200
+  },
+  {
+   "fieldname": "present_address",
+   "fieldtype": "Data",
+   "label": "Present Address/ Docs presented (For Corp account)",
+   "length": 200
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "corporate_account_name",
+   "fieldtype": "Data",
+   "label": "Corporate Account Name",
+   "length": 200
+  },
+  {
+   "fieldname": "nature_of_business",
+   "fieldtype": "Data",
+   "label": "Nature of Business (Corporate Account)",
+   "length": 200
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "id_type",
+   "fieldtype": "Data",
+   "label": "ID Type"
+  },
+  {
+   "fieldname": "id_expiry",
+   "fieldtype": "Data",
+   "label": "ID Expiry"
+  },
+  {
+   "fieldname": "id_docs_pic_name",
+   "fieldtype": "Data",
+   "label": "ID/Docs Pic name",
+   "length": 200
+  },
+  {
+   "fieldname": "risk_level",
+   "fieldtype": "Data",
+   "label": "Risk Level"
+  },
+  {
+   "fieldname": "money_borrowed",
+   "fieldtype": "Currency",
+   "label": "Money Borrowed",
+   "options": "Company:company:default_currency"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "max_attachments": 200,
+ "modified": "2021-09-20 16:33:27.890461",
+ "modified_by": "Administrator",
+ "module": "Foreign Exchange",
+ "name": "FX Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
