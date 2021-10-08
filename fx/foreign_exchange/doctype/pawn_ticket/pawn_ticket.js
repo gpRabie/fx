@@ -13,6 +13,25 @@ frappe.ui.form.on('Pawn Ticket', {
     	});
 	},
 
+	customers_tracker_no: function(frm){
+		frappe.call({
+			method: 'fx.foreign_exchange.test.hello',
+			args: {
+				customer_name: frm.doc.customers_tracker_no
+			},
+
+			callback: function(r){
+				frm.set_value('notes', r.message);
+				refresh_fields('notes');
+				console.log(r.message);
+			},
+			
+			error: function(r){
+				console.log(r);
+			}
+		});
+	},
+
 	pawn_type: function(frm){
 		set_total_appraised_amount(frm);
 

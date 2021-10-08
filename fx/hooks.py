@@ -36,6 +36,11 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+doctype_js = {"Journal Entry" : "public/js/journal_entry.js"}
+# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+# doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
+# doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
 # Home Pages
 # ----------
 
@@ -100,7 +105,6 @@ app_license = "MIT"
 doc_events = {
  	"FX Customer": {
  		"validate": "fx.foreign_exchange.doc_events.fx_customer.validate",
- 		
 	}
 }
 
@@ -124,6 +128,20 @@ doc_events = {
 # 		"fx.tasks.monthly"
 # 	]
 # }
+
+scheduler_events = {
+
+	"daily": [
+ 		"fx.foreign_exchange.new_journal_entry.create_new_journal_entry"
+ 	],
+
+#	"cron": {
+#		"*/5 * * * *": [
+#			"fx.foreign_exchange.new_journal_entry.create_new_journal_entry"
+#		]
+
+#	}
+}
 
 # Testing
 # -------
