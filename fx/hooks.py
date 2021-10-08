@@ -132,8 +132,8 @@ doc_events = {
 scheduler_events = {
 
 	"daily": [
- 		"fx.foreign_exchange.new_journal_entry.create_new_journal_entry"
- 	],
+		"fx.foreign_exchange.new_journal_entry.create_new_journal_entry"
+	]
 
 #	"cron": {
 #		"*/5 * * * *": [
