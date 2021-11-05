@@ -16,6 +16,10 @@ fx/config/__init__.py
 fx/config/desktop.py
 fx/config/docs.py
 fx/foreign_exchange/__init__.py
+fx/foreign_exchange/common.py
+fx/foreign_exchange/csvtest.py
+fx/foreign_exchange/new_journal_entry.py
+fx/foreign_exchange/test.py
 fx/foreign_exchange/custom/customer.json
 fx/foreign_exchange/doc_events/fx_customer.py
 fx/foreign_exchange/doctype/__init__.py
@@ -48,5 +52,6 @@ fx/foreign_exchange/report/sample_script_report/sample_script_report.html
 fx/foreign_exchange/report/sample_script_report/sample_script_report.js
 fx/foreign_exchange/report/sample_script_report/sample_script_report.json
 fx/foreign_exchange/report/sample_script_report/sample_script_report.py
+fx/public/js/journal_entry.js
 fx/templates/__init__.py
 fx/templates/pages/__init__.py
